@@ -8,21 +8,13 @@
 		<reflection-dynamic type="int">1</reflection-dynamic>
 		<reflect_map-enabled type="int">0</reflect_map-enabled>
 		<reflection-correction type="float"><use>/sim/model/reflection/reflection-correction</use></reflection-correction>
-		<!--<reflection-type type="int">2</reflection-type>-->
+		<reflection-type type="int">2</reflection-type>
 		<ambient-correction type="float"><use>/sim/model/reflection/ambient-correction</use></ambient-correction>
 		<lightmap-enabled type="int">1</lightmap-enabled>
 		<lightmap-multi type="int">0</lightmap-multi>
 		<normalmap-enabled type="int">1</normalmap-enabled>
 
-<<<<<<< HEAD
         
-=======
-        <reflection-rainbow type="float">0.05</reflection-rainbow>
-                <reflection-fresnel type="float">0.1</reflection-fresnel>
-
-        <lightmap-factor type="float" n="3">0.0</lightmap-factor>
-        <lightmap-color type="vec3d" n="3">1.0 1.0 1.0</lightmap-color>
->>>>>>> dev
 		<texture n="2">
 			<image>Aircraft/A320-family/Models/Effects/Lightmaps/Fuse-Main-Normal.png</image>
 			<filter>linear-mipmap-linear</filter>
