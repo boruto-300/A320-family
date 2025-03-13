@@ -1,12 +1,12 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
-MATERIAL "Fuse-Placards" rgb 0.9 0.9 0.9  amb 1 1 1  emis 0 0 0  spec 0.6 0.6 0.6  shi 25  trans 0
-MATERIAL "glass.red" rgb 1 0 0  amb 0.2 0.2 0.2  emis 0.1 0.1 0.1  spec 1 0.405 0.309  shi 128  trans 1
-MATERIAL "Static-Elements" rgb 0.8 0.8 0.8  amb 1 1 1  emis 0 0 0  spec 1 1 1  shi 1  trans 0
-MATERIAL "glass.white" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0.1 0.1 0.1  spec 1 1 1  shi 128  trans 1
-MATERIAL "LandingGears" rgb 0.8 0.8 0.8  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 12  trans 0
-MATERIAL "glass" rgb 0.204 0.204 0.204  amb 0.2 0.2 0.2  emis 0.1 0.1 0.1  spec 0 0 0  shi 128  trans 1
-MATERIAL "glass.green" rgb 0 1 0.005  amb 0.2 0.2 0.2  emis 0.1 0.1 0.1  spec 0.592 1 0.432  shi 128  trans 1
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 10  trans 0
+MATERIAL "Fuse-Placards" rgb 0.9 0.9 0.9  amb 0.9 0.9 0.9  emis 0 0 0  spec 0.6 0.6 0.6  shi 25  trans 0
+MATERIAL "glass.red" rgb 1 0 0  amb 1 0 0  emis 0.1 0.1 0.1  spec 1 0.405 0.309  shi 128  trans 1
+MATERIAL "Static-Elements" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 1 1 1  shi 1  trans 0
+MATERIAL "glass.white" rgb 1 1 1  amb 1 1 1  emis 0.1 0.1 0.1  spec 1 1 1  shi 128  trans 1
+MATERIAL "LandingGears" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 0.5 0.5 0.5  shi 12  trans 0
+MATERIAL "glass" rgb 0.204 0.204 0.204  amb 0.204 0.204 0.204  emis 0.1 0.1 0.1  spec 0 0 0  shi 128  trans 1
+MATERIAL "glass.green" rgb 0 1 0.005  amb 0 1 0.005  emis 0.1 0.1 0.1  spec 0.592 1 0.432  shi 128  trans 1
 OBJECT world
 kids 148
 OBJECT poly
