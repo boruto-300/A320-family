@@ -171,7 +171,7 @@
 			<file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
 		</dual_control_tools>
 		<aircraft_dual_control>
-			<file>Aircraft/A320-FAMILY/DualControl/a320-dual-control.nas</file>
+			<file>Aircraft/A320-family/DualControl/a320-dual-control.nas</file>
 		</aircraft_dual_control>
 		<dual_control>
 			<file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
