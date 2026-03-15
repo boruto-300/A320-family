@@ -14,6 +14,8 @@ if (pts.Options.configName.getValue() == "A320-200-CFM") {
 	max_fuel = 42.2;
 } elsif (pts.Options.configName.getValue() == "A320neo-CFM" or pts.Options.configName.getValue() == "A320neo-PW") {
 	max_fuel = 42.0;
+} elsif (pts.Options.configName.getValue() == "A320neo-PW-copilot") {
+	max_fuel = 42.0;
 }
 
 # Get nodes

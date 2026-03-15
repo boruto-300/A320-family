@@ -57,7 +57,14 @@ if (configName == "A320-200-CFM") {
 	livery.createTarget("engines", elements, "sim/model/livery/texture-engine", "Aircraft/A320-family/Models/Liveries/PW-NEO/2k/NKS-engine.png");
 #	livery.addLayer("engines", "dirt", "Aircraft/A320-family/Models/Liveries/PW-NEO/engine-dirt.png");
 	defaultFuseLiv = "Aircraft/A320-family/Models/Liveries/PW-NEO/4k/NKS-fuselage.png";
-}
+}else if (configName == "A320neo-PW-copilot"){
+	var livery = aircraft.canvas_livery.init("Models/Liveries/PW-NEO");
+	elements = ["EnginePWPPL", "EnginePWPPL.Inner", "EnginePWPPR", "EnginePWPPR.Inner", "Exhaust3PWPPL", "Exhaust3PWPPR", "Exxhaust2PWPPL", "Exxhaust2PWPPR", "IntakePWPPL", "IntakePWPPR", "PylonPWPPL", "PylonPWPPR", "ReverserRDoorPWPP", "ReverserLDoorPWPP"];
+	livery.createTarget("engines", elements, "sim/model/livery/texture-engine", "Aircraft/A320-family/Models/Liveries/PW-NEO/2k/NKS-engine.png");
+#	livery.addLayer("engines", "dirt", "Aircraft/A320-family/Models/Liveries/PW-NEO/engine-dirt.png");
+	defaultFuseLiv = "Aircraft/A320-family/Models/Liveries/PW-NEO/4k/NKS-fuselage.png";
+};
+
 
 var elements = ["AileronL","AileronR","Antenna1","Antenna2","ApuFlap","AvionicsVentDoor","Cargo1","Cargo2","Cargo3","DoorL1","DoorL4","DoorR1","DoorR4","ElevatorL","ElevatorR","EngineFairingL","EngineFairingR","FairingL1","FairingL2","FairingL3","FairingR1","FairingR2","FairingR3","FlapL1","FlapL2","FlapR1","FlapR2","Fuselage","GPUServiceDoor","Hstabs","MLGGearDoorL","MLGGearDoorR","MLGWingDoorL1","MLGWingDoorL2","MLGWingDoorR1","MLGWingDoorR2","NLGAftDoorL","NLGAftDoorR","NLGFittingPanel","NLGForewardDoorL","NLGForewardDoorR","OutflowValveDoor1","OutflowValveDoor2","RatDoorL","RatDoorR","Rudder","Sharklet","SlatL1","SlatL2","SlatR1","SlatR2","SpoilerL1","SpoilerL2","SpoilerL3","SpoilerL4","SpoilerL5","SpoilerR1","SpoilerR2","SpoilerR3","SpoilerR4","SpoilerR5","Wings","WingtipFence"];
 livery.createTarget("fuselage", elements, "sim/model/livery/texture-fuselage", defaultFuseLiv, resolution=16384);

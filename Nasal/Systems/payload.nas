@@ -20,6 +20,9 @@ var fuelSvc = {
 		} elsif (pts.Options.configName.getValue() == "A320neo-CFM" or pts.Options.configName.getValue() == "A320neo-PW") {
 			me.Nodes.requestTotalLbs.setValue(math.max(math.min(pts.Consumables.Fuel.totalFuelLbs.getValue() + me.Nodes.requestLbs.getValue(), 41977), 0));
 		}
+		elsif (pts.Options.configName.getValue() == "A320neo-PW-copilot") {
+			me.Nodes.requestTotalLbs.setValue(math.max(math.min(pts.Consumables.Fuel.totalFuelLbs.getValue() + me.Nodes.requestLbs.getValue(), 41977), 0));
+		} 
 	},
 	
 	refuel: func() {

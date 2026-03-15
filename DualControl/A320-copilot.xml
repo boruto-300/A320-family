@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList>
+<name>A320neo-PW-copilot</name>
+	<path>empty.ac</path> <!-- Livery system on MP multimodel -->
+
+	<model>
+		<name>A320</name>
+		<path>Aircraft/A320-family/Models/A320-common.xml</path>
+	</model>
+	
+	<model>
+		<name>EnginesPWLeap</name>
+		<path>Aircraft/A320-family/Models/Fuselage/a320.pw.xml</path>
+		<offsets>
+			<z-m>0.83109</z-m>
+		</offsets>
+	</model>
+	
+	<!-- Nasal code -->
+	<nasal>
+		<load><![CDATA[
+			var livery_update = aircraft.canvas_livery_update.init("Models/Liveries//PW-NEO", _module_id);
+			var elements = ["AileronL","AileronR","Antenna1","Antenna2","ApuFlap","AvionicsVentDoor","Cargo1","Cargo2","Cargo3","DoorL1","DoorL4","DoorR1","DoorR4","ElevatorL","ElevatorR","EngineFairingL","EngineFairingR","FairingL1","FairingL2","FairingL3","FairingR1","FairingR2","FairingR3","FlapL1","FlapL2","FlapR1","FlapR2","Fuselage","GPUServiceDoor","Hstabs","MLGGearDoorL","MLGGearDoorR","MLGWingDoorL1","MLGWingDoorL2","MLGWingDoorR1","MLGWingDoorR2","NLGAftDoorL","NLGAftDoorR","NLGFittingPanel","NLGForewardDoorL","NLGForewardDoorR","OutflowValveDoor1","OutflowValveDoor2","RatDoorL","RatDoorR","Rudder","Sharklet","SlatL1","SlatL2","SlatR1","SlatR2","SpoilerL1","SpoilerL2","SpoilerL3","SpoilerL4","SpoilerL5","SpoilerR1","SpoilerR2","SpoilerR3","SpoilerR4","SpoilerR5","Wings","WingtipFence","AOASensorL1","AOASensorL2","AOASensorR"];
+			livery_update.createTarget("fuselage", elements, "sim/model/livery/texture-fuselage", resolution=8192);
+
+			elements = ["EnginePWPPL", "EnginePWPPL.Inner", "EnginePWPPR", "EnginePWPPR.Inner", "Exhaust3PWPPL", "Exhaust3PWPPR", "Exxhaust2PWPPL", "Exxhaust2PWPPR", "IntakePWPPL", "IntakePWPPR", "PylonPWPPL", "PylonPWPPR", "ReverserLDoorPWPP", "ReverserRDoorPWPP"];
+			livery_update.createTarget("engines", elements, "sim/model/livery/texture-engine");
+		]]></load>
+		<unload>
+			livery_update.stop();
+		</unload>
+	</nasal>
 </PropertyList>
