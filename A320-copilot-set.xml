@@ -248,7 +248,7 @@
 		</ignition>
 	</systems>
 	<systems n="1">
-    <pneumatics>
+    <pneumatics n ="!">
       <indicating>
         <bmc1-working type="bool">1</bmc1-working>
       </indicating>
