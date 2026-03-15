@@ -248,9 +248,10 @@
 		</ignition>
 	</systems>
 	<systems n="1">
-		<property>
-     /systems/pneumatics/indicating/bmc1-working
-    </property>
-		<value type="bool">true</value> 
-	</systems>
+    <pneumatics>
+      <indicating>
+        <bmc1-working type="bool">true</bmc1-working>
+      </indicating>
+    </pneumatics>
+  </systems>
 </PropertyList>
