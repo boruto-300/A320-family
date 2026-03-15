@@ -17,10 +17,6 @@
 			<livery-dir type="string">Aircraft/A320-family/Models/Liveries/PW-NEO</livery-dir>
 		</model>
 
-		<property>
-     <path>/systems/pneumatics/indicating/bmc1-working</path>
-     <value type="bool">true</value> 
-    </property>
 		<sound>
 			<path>Aircraft/A320-family/Sounds/leapx-sound.xml</path>
 		</sound>
@@ -250,5 +246,11 @@
 			<starter-cutoff-n2 type="double">50</starter-cutoff-n2> <!-- Check -->
 			<starter-engage-n2 type="double">16</starter-engage-n2> <!-- Check -->
 		</ignition>
+	</systems>
+	<systems n="1">
+		<property>
+     /systems/pneumatics/indicating/bmc1-working
+    </property>
+		<value type="bool">true</value> 
 	</systems>
 </PropertyList>
